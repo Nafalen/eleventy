@@ -4,9 +4,11 @@ export default async function (eleventyConfig) {
   eleventyConfig.setOutputDirectory("./dist");
   eleventyConfig.setIncludesDirectory("./templates");
 
+  
+
   eleventyConfig.setTemplateFormats("html,njk");
 
-  eleventyConfig.addPassthroughCopy("images");
+  eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("css");
 
   return {
